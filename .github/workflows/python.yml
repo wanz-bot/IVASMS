@@ -1,8 +1,8 @@
-name: Auto Run index.py (Manual Token)
+name: Auto Run index.py (Manual ENV)
 
 on:
   schedule:
-    - cron: "*/5 * * * *"   # AUTO AE tiap 5 menit
+    - cron: "*/5 * * * *"   # auto jalan tiap 5 menit
   workflow_dispatch:
 
 jobs:
@@ -16,5 +16,9 @@ jobs:
     - name: Build Docker image
       run: docker build -t indexpy .
 
-    - name: Run container (MANUAL TOKEN)
-      run: docker run --rm -e BOT_TOKEN=8509612757:AAG1zeVaMoFxGWSqK2eF6NQuUi6hTVjkUXM indexpy
+    - name: Run container
+      run: |
+        docker run --rm \
+          -e BOT_TOKEN=8509612757:AAG1zeVaMoFxGWSqK2eF6NQuUi6hTVjkUXM \
+          -e CHAT_ID=-1002919596948 \
+          indexpy
