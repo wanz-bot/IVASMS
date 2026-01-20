@@ -50,7 +50,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-ADMIN_IDS = [7500869913, 6524840104]
+ADMIN_IDS = [6837025112, 6837025112]
 
 bot_users = set()
 
