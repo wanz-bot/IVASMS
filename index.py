@@ -84,8 +84,8 @@ BANNER_URL = "https://files.catbox.moe/koc535.jpg"
 def get_inline_keyboard():
     """Return inline keyboard with channel/group buttons - vertical layout."""
     keyboard = [
-        [InlineKeyboardButton("𝐍ᴜᴍʙᴇʀ 𝐂ʜᴀɴɴᴇʟ", url="https://t.me/mrafrixtech")],
-        [InlineKeyboardButton("𝐎ᴛᴘ 𝐆𝐫𝐨𝐮𝐩", url="https://t.me/afrixotpgc")],
+        [InlineKeyboardButton("𝐍ᴜᴍʙᴇʀ 𝐂ʜᴀɴɴᴇʟ", url="https://t.me/wanzpedia")],
+        [InlineKeyboardButton("𝐎ᴛᴘ 𝐆𝐫𝐨𝐮𝐩", url="https://t.me/+kKyhHCUBG-cxYTg1")],
         [InlineKeyboardButton("𝐑ᴇɴᴛ sᴄʀɪᴘᴛ", url="https://t.me/jaden_afrix")],
     ]
     return InlineKeyboardMarkup(keyboard)
