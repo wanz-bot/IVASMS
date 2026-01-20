@@ -18,7 +18,7 @@ load_dotenv()
 IVASMS_EMAIL = os.getenv("wanzhost5@gmail.com")
 IVASMS_PASSWORD = os.getenv("+JU%khVR9fcCn+2")
 BOT_TOKEN = os.getenv("8509612757:AAG1zeVaMoFxGWSqK2eF6NQuUi6hTVjkUXM")
-CHAT_ID = os.getenv("6837025112")
+CHAT_ID = os.getenv("-1002919596948")
 
 # Common headers
 BASE_HEADERS = {
