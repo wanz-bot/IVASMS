@@ -1,0 +1,20 @@
+name: Auto Run index.py (Docker)
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"   # auto jalan tiap 5 menit
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Build Docker image
+      run: docker build -t indexpy .
+
+    - name: Run container
+      run: docker run --rm indexpy
